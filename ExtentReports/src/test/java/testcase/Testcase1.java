@@ -15,7 +15,7 @@ public class Testcase1 {
 
 	@Test
 	public void doUserReg() {
-
+		//this is for registration
 		//test = extent.createTest("User Reg Test");
 		Assert.fail("User Reg Test Failed");
 	}
