@@ -18,7 +18,7 @@ public class TestCase2 extends ExtentListeners {
 	public static ExtentTest test;
 	//public static ExtentReports extent;
 	public static WebDriver driver;
-	public String driverPath = "C:\\Users\\MohanSusha\\Downloads\\chromedriver_win32\\chromedriver.exe";
+	public String driverPath = System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\chromedriver.exe";
 
 	@BeforeMethod
 	public void startBrowser() {
