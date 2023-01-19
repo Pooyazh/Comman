@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-12T09:32:50 IST" name="Suite" finished-at="2023-01-12T09:33:34 IST" duration-ms="44324">
+  <suite started-at="2023-01-19T13:36:57 IST" name="Suite" finished-at="2023-01-19T13:37:18 IST" duration-ms="20306">
     <groups>
     </groups>
-    <test started-at="2023-01-12T09:32:50 IST" name="Test" finished-at="2023-01-12T09:33:34 IST" duration-ms="44324">
+    <test started-at="2023-01-19T13:36:57 IST" name="Test" finished-at="2023-01-19T13:37:18 IST" duration-ms="20306">
       <class name="testcase.TestCase2">
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:testcase.TestCase2@62230c58]" started-at="2023-01-12T09:32:50 IST" name="startBrowser" finished-at="2023-01-12T09:32:51 IST" duration-ms="1076" status="PASS">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:testcase.TestCase2@62230c58]" started-at="2023-01-19T13:36:57 IST" name="startBrowser" finished-at="2023-01-19T13:37:01 IST" duration-ms="3386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method signature="doSearch()[pri:1, instance:testcase.TestCase2@62230c58]" started-at="2023-01-12T09:32:51 IST" name="doSearch" finished-at="2023-01-12T09:32:54 IST" duration-ms="3261" status="FAIL">
+        <test-method signature="doSearch()[pri:1, instance:testcase.TestCase2@62230c58]" started-at="2023-01-19T13:37:01 IST" name="doSearch" finished-at="2023-01-19T13:37:04 IST" duration-ms="3641" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Sselenium - Google Search] but found [selenium - Google Search]]]>
@@ -24,7 +24,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
-at testcase.TestCase2.doSearch(TestCase2.java:45)
+at testcase.TestCase2.doSearch(TestCase2.java:82)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -57,34 +57,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doSearch -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcase.TestCase2@62230c58]" started-at="2023-01-12T09:32:54 IST" name="closeBrowser" finished-at="2023-01-12T09:33:11 IST" duration-ms="16298" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcase.TestCase2@62230c58]" started-at="2023-01-19T13:37:05 IST" name="closeBrowser" finished-at="2023-01-19T13:37:05 IST" duration-ms="584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:testcase.TestCase2@62230c58]" started-at="2023-01-12T09:33:11 IST" name="startBrowser" finished-at="2023-01-12T09:33:11 IST" duration-ms="602" status="PASS">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:testcase.TestCase2@62230c58]" started-at="2023-01-19T13:37:05 IST" name="startBrowser" finished-at="2023-01-19T13:37:08 IST" duration-ms="2710" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method signature="doImFeelingLucky()[pri:2, instance:testcase.TestCase2@62230c58]" started-at="2023-01-12T09:33:11 IST" name="doImFeelingLucky" finished-at="2023-01-12T09:33:17 IST" duration-ms="5878" status="PASS">
+        <test-method signature="doImFeelingLucky()[pri:2, instance:testcase.TestCase2@62230c58]" started-at="2023-01-19T13:37:08 IST" name="doImFeelingLucky" finished-at="2023-01-19T13:37:13 IST" duration-ms="5536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doImFeelingLucky -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcase.TestCase2@62230c58]" started-at="2023-01-12T09:33:17 IST" name="closeBrowser" finished-at="2023-01-12T09:33:34 IST" duration-ms="16283" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcase.TestCase2@62230c58]" started-at="2023-01-19T13:37:13 IST" name="closeBrowser" finished-at="2023-01-19T13:37:14 IST" duration-ms="573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="startBrowser()[pri:0, instance:testcase.TestCase2@62230c58]" started-at="2023-01-12T09:33:34 IST" name="startBrowser" finished-at="2023-01-12T09:33:34 IST" duration-ms="618" status="PASS">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:testcase.TestCase2@62230c58]" started-at="2023-01-19T13:37:14 IST" name="startBrowser" finished-at="2023-01-19T13:37:17 IST" duration-ms="2720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method signature="isSkip()[pri:3, instance:testcase.TestCase2@62230c58]" started-at="2023-01-12T09:33:34 IST" name="isSkip" finished-at="2023-01-12T09:33:34 IST" duration-ms="1" status="SKIP">
+        <test-method signature="isSkip()[pri:3, instance:testcase.TestCase2@62230c58]" started-at="2023-01-19T13:37:17 IST" name="isSkip" finished-at="2023-01-19T13:37:17 IST" duration-ms="1" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test case]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test case
-at testcase.TestCase2.isSkip(TestCase2.java:62)
+at testcase.TestCase2.isSkip(TestCase2.java:99)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -117,7 +117,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isSkip -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcase.TestCase2@62230c58]" started-at="2023-01-12T09:33:34 IST" name="closeBrowser" finished-at="2023-01-12T09:33:34 IST" duration-ms="44" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcase.TestCase2@62230c58]" started-at="2023-01-19T13:37:17 IST" name="closeBrowser" finished-at="2023-01-19T13:37:18 IST" duration-ms="975" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

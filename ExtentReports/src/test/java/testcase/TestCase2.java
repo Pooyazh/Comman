@@ -1,8 +1,14 @@
 package testcase;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
@@ -15,16 +21,46 @@ import com.aventstack.extentreports.Status;
 import Listeners.ExtentListeners;
 
 public class TestCase2 extends ExtentListeners {
+
+	public static Properties config = new Properties();
+	public FileInputStream fis = null;
+	public String browser = null;
 	public static ExtentTest test;
-	//public static ExtentReports extent;
+	// public static ExtentReports extent;
 	public static WebDriver driver;
-	public String driverPath = System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\chromedriver.exe";
+	public String driverPath=null;
+//	public String driverPath = System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\chromedriver.exe";
 
 	@BeforeMethod
 	public void startBrowser() {
+		try {
+			fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		try {
+			config.load(fis);
+			System.out.println("Config file loaded !!!");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		browser = config.getProperty("browser");
+		if(browser.equalsIgnoreCase("chrome")) {
+		driverPath=System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", driverPath);
 		driver = new ChromeDriver();
-		
+		}
+		else {
+			driverPath=System.getProperty("user.dir") + "\\src\\test\\resources\\drivers\\geckodriver.exe";
+			System.out.println("firefox driver available");
+			System.setProperty("webdriver.gecko.driver", driverPath);
+			driver = new FirefoxDriver();
+		}
+
 	}
 
 	@AfterMethod
@@ -56,10 +92,11 @@ public class TestCase2 extends ExtentListeners {
 		Thread.sleep(2000);
 
 	}
-	
-	  @Test(priority=3) 
-	  public void isSkip() {
-	  
-	  throw new SkipException("Skipping the test case"); }
-	 
+
+	@Test(priority = 3)
+	public void isSkip() {
+
+		throw new SkipException("Skipping the test case");
+	}
+
 }
