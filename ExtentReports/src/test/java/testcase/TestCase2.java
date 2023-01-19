@@ -35,8 +35,9 @@ public class TestCase2 extends ExtentListeners {
 
 	@Test(priority = 1)
 	public void doSearch() throws InterruptedException {
-		test=getTestInstance();
-		test.log(Status.INFO,"Initating the test");
+		/*
+		 * test=getTestInstance(); test.log(Status.INFO,"Initating the test");
+		 */
 		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
 		driver.findElement(By.name("q")).sendKeys("selenium");
