@@ -42,7 +42,7 @@
 
 	</dependencies>
 
-	<build>
+	<!-- <build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -51,7 +51,7 @@
 				<executions>
 					<execution>
 						<id>report</id>
-						<phase>clean</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>compile</goal>
 						</goals>
@@ -59,6 +59,6 @@
 				</executions>
 			</plugin>
 		</plugins>
-	</build>
+	</build> -->
 
 </project>
