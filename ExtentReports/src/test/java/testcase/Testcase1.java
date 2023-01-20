@@ -12,7 +12,7 @@ public class Testcase1 {
 		//test = extent.createTest("Login Test");
 		System.out.println("Executing Login Test");
 	}
-//method for registration
+//method for registration form
 	@Test
 	public void doUserReg() {
 		//this is for registration
